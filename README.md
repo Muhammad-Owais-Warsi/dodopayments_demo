@@ -46,6 +46,8 @@ npm run dev
 npm run dev
 
 ```
+---
+
 ## Resources
 - [Better Pay repo](https://github.com/Muhammad-Owais-Warsi/Better-Pay)
 - [Better Pay docs](https://better-pay.gitbook.io/better-pay)
