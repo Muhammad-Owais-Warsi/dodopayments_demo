@@ -18,7 +18,7 @@ const provider = new BetterPay({
 app.post("/create", async (req, res) => {
   const data = req.body;
   const response = await provider.createPayment({
-    amount: data.amount,
+    amount: [data.amount],
     currency: data.currency,
     email: data.email,
     name: data.name
@@ -35,7 +35,7 @@ app.post("/confirm", async (req, res) => {
 
     const response = await provider.confirmPayment({
       customerId: data.customerId,
-      productId: data.productId,
+      productId: [data.productId],
       city: data.city,
       countryIsoCode: data.countryIsoCode,
       state: data.state,
